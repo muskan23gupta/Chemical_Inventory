@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemical Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Inventory</h1>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <button id="addRow">Add Row</button>
+      <button id="deleteRow">Delete Row</button>
+      <button id="moveUp">Move Up</button>
+      <button id="moveDown">Move Down</button>
+      <button id="refresh">Refresh</button>
+      <button id="save">Save Data</button>
+    </div>
+
+    <!-- Table for chemical data -->
+    <table id="chemicalTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Chemical Name</th>
+          <th>Vendor</th>
+          <th>Density</th>
+          <th>Viscosity</th>
+          <th>Packaging</th>
+          <th>Pack Size</th>
+          <th>Unit</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be dynamically inserted here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="chemicalsData.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
